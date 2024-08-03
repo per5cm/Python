@@ -67,7 +67,7 @@
 ## return
 def main():
     x = int(input("What's x? ")) ## x converts into interger
-    print("x aquared is", square(x)) ## says x squared and second argument to print function
+    print("x squared is", square(x)) ## says x squared and second argument to print function
     
 def square(n):
     return n * n ## return value
