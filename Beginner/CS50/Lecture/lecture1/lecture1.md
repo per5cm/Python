@@ -69,6 +69,19 @@ else:
     print("x is equal to y")
 ```
 
+more simplier version
+
+Example:
+```python                     ## second version
+x = int(input("What's x? "))  ## x = int(input("What's x? "))
+y = int(input("What's y? "))  ## y = int(input("What's y? "))
+
+if x != y:                          ## if x == y:
+    print("x is not equals to y")   ## print("x is equal to y")
+else:                               ## else:
+    print("x is equal to y")        ## print("x is not equals to y")
+```
+
 # Flowchart for the Python Code
 
 ```mermaid
@@ -79,5 +92,10 @@ graph TD
     D -->|Yes| E["x is not equal to y"]
     D -->|No| F["x is equal to y"]
     E --> G[End]
-    F --> G
+    F --> G[End]
+```
+Question 'and'
+
+```python
+and
 ```
