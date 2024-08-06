@@ -20,6 +20,10 @@ an other proposition. technically you can use only 'if' because hardware got fas
 ```python
 elif  
 ```
+final form lol
+```python
+else
+```
 
 example:
 ```python
@@ -30,27 +34,50 @@ if x < y:  ## this is so called boolean expression (named after mathematician Bo
     print("x is les than y") 
 elif x < y:
     print("x is greater than y")
-elif x == y:
+else:  ## x == y: you dont need to write down that x equals y because logically if first two false than x is equals to y.
     print("x is equals to y")
 ```
 # Flowchart for the Python Code
-only when used 3 if arguments
+'remember flowchart with 3 if's arguments(stright line)'
 
 ```mermaid
 graph TD
     A[Start] --> B[Input x]
     B --> C[Input y]
     C --> D{Is x < y?}
-    D -->|Yes| E[x is less than y]
+    D -->|Yes| E["x is less than y"]
     D -->|No| F{Is x > y?}
-    F -->|Yes| G[x is greater than y]
-    F -->|No| H{Is x == y?}
-    H -->|Yes| I[x is equal to y]
-    E --> J[End]
-    G --> J
-    I --> J
+    F -->|Yes| G["x is greater than y"]
+    F -->|No| H["x is equal to y"]
+    E --> I[End]
+    G --> I
+    H --> I
 ```
-an other proposition.
+
+question or
 ```python
-elif 
+or
+```
+Example:
+```python
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+
+if x < y or x > y:
+    print("x is not equals to y")
+else:
+    print("x is equal to y")
+```
+
+# Flowchart for the Python Code
+
+```mermaid
+graph TD
+    A[Start] --> B[Input x]
+    B --> C[Input y]
+    C --> D{Is x < y or x > y?}
+    D -->|Yes| E["x is not equal to y"]
+    D -->|No| F["x is equal to y"]
+    E --> G[End]
+    F --> G
 ```
