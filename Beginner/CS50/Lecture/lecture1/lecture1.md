@@ -11,6 +11,11 @@ simbols to ask questions:
 <= ## less than or equal to...
 ==  ## represents quality single = represents assignment...
 !=  ## represents not equal to...
++ ## addition
+- ## subtraction
+* ## multiplication
+/ ## division
+% ## modulo or remainder 2 / 3 = 2
 ```
 we are going to need other keywords to ask questions
 ```python
@@ -99,3 +104,25 @@ Question 'and'
 ```python
 and
 ```
+# grade.py
+
+```python                                            
+score= int(input("Score: "))          
+
+if score >= 90 and score <= 100:  
+    print("Grade: A")         
+elif score >= 80 and score < 90:   
+    print("Grade: B")         
+elif score >= 70 and score < 80:  
+    print("Grade: C")   
+elif score >= 60 and score < 70: 
+    print("Grade: D") 
+else:   
+    print("Grade: F")
+```
+
+# Boolean Values (bool can only be true or false)
+
+# match
+
+# case
