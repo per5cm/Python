@@ -157,6 +157,7 @@ def get_grade(score):
         case _:
             return "F"
 ```
+```mermaid
 graph TD
     A[Start] --> B[Input score]
     B --> C{Score >= 90?}
@@ -173,4 +174,4 @@ graph TD
     H --> L
     J --> L
     K --> L
-
+```
