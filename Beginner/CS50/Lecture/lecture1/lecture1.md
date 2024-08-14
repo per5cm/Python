@@ -1,23 +1,33 @@
-# Conditionals with Python
+# Conditionals with Python...
 
-are this ability to ask questions and answers those questions, in order to decide do you want to execute this line of code? Or this linbe of code instead?
+...are this ability to ask questions and answers those questions, in order to decide do you want to execute this line of code? Or this linbe of code instead?
 They allow you to take the proverbial forks in the road, within your own code, logically.
 
-simbols to ask questions:
 ```python
->  ## greater than...
->=  ## greater than or equal to...
-<  ## less than...
-<= ## less than or equal to...
-==  ## represents quality single = represents assignment...
-!=  ## represents not equal to...
-+ ## addition
-- ## subtraction
-* ## multiplication
-/ ## division
-% ## modulo or remainder 2 / 3 = 2
+if condition:
+    # Code to execute if condition is True
+elif another_condition:
+    # Code to execute if another_condition is True
+else:
+    # Code to execute if no previous conditions were True
 ```
-we are going to need other keywords to ask questions
+
+Symbols to ask questions:
+
+    '>'  Greater than...
+    '>='   Greater than or equal to...
+    '<'   Less than...
+    '<='  Less than or equal to...
+    '=='   Represents quality, single = represents assignment...
+    '!='   Represents not equal to...
+
+    '+'  Addition
+    '-'  Subtraction
+    '*'  Multiplication
+    '/'  division
+    '%'  modulo or remainder 2 / 3 = 2
+
+We are going to need other keywords to ask questions
 ```python
 if ## if the answer to this question is true, then go ahead and execute this code for me.
 ```
@@ -59,7 +69,9 @@ graph TD
     H --> I
 ```
 
-question or
+Question 'or'
+Used to combine conditions. If either condition is true, the entire expression evaluates to true.
+
 ```python
 or
 ```
@@ -74,7 +86,7 @@ else:
     print("x is equal to y")
 ```
 
-more simplier version
+More simplier version
 
 Example:
 ```python                     ## second version
@@ -100,6 +112,7 @@ graph TD
     F --> G[End]
 ```
 Question 'and'
+Used to combine conditions. Both conditions must be true for the entire expression to evaluate to true.
 
 ```python
 and
@@ -122,7 +135,42 @@ else:
 ```
 
 # Boolean Values (bool can only be true or false)
+In Python, boolean values are True and False. They are often used in conditional statements and logical operations.
+```python
+is_tall = True
+is_short = False
+```
 
-# match
+# Match and Case
+The match statement, introduced in Python 3.10, provides a more powerful and flexible way to handle conditional logic compared to traditional if statements. It's similar to switch-case statements in other languages.
+```python
+def get_grade(score):
+    match score:
+        case score if score >= 90:
+            return "A"
+        case score if score >= 80:
+            return "B"
+        case score if score >= 70:
+            return "C"
+        case score if score >= 60:
+            return "D"
+        case _:
+            return "F"
+```
+graph TD
+    A[Start] --> B[Input score]
+    B --> C{Score >= 90?}
+    C -->|Yes| D["Grade: A"]
+    C -->|No| E{Score >= 80?}
+    E -->|Yes| F["Grade: B"]
+    E -->|No| G{Score >= 70?}
+    G -->|Yes| H["Grade: C"]
+    G -->|No| I{Score >= 60?}
+    I -->|Yes| J["Grade: D"]
+    I -->|No| K["Grade: F"]
+    D --> L[End]
+    F --> L
+    H --> L
+    J --> L
+    K --> L
 
-# case
