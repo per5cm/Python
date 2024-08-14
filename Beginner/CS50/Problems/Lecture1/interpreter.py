@@ -42,3 +42,12 @@ match y:
 
 # Step 4: Output the result as a floating-point value formatted to one decimal place
 #print(f"{result:.1f}")
+
+## eval
+
+x=input("what's x? ")
+
+
+result=float(eval(x))
+
+print(result)
