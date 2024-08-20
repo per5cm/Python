@@ -1,4 +1,5 @@
 ## Ask user for their name
+
 # name = input("What's your name? ")
 
 ## Say hello to user
@@ -9,6 +10,7 @@
 # print("hello,", name, sep="???") ## override the default behavior of SEP.
 
 ## Final Version!
+
 # name = input("What's your name? ")
 
 ## problem: to clean space if users presses too much space button.
@@ -21,6 +23,7 @@
 # print(f"hello, {name}") #f is for F string.
 
 ## Shorter Version
+
 # name = input("What's your name? ").strip().title()
 # print(f"hello, {name}")
 

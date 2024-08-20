@@ -1,4 +1,5 @@
-## While loop is perfect choice when you want to keep looping while some cindition is ture, but your not exactly sure how long you're going to loop at the end of the day.
+## While loop is perfect choice when you want to keep looping while some cindition is ture, 
+## but your not exactly sure how long you're going to loop at the end of the day.
 
 from soil import sample
 
