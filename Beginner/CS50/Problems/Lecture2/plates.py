@@ -7,8 +7,7 @@ def main():
 
 
 def is_valid(s):
-    if s > 6 and s < 2:
-        return s
+    ...
 
 
 main()
