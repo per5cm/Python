@@ -2,40 +2,40 @@
 
 ## initial simple version
 
-#students = ["Hermoine", "Harry", "Ron"]
-#
-#print(students[0])
-#print(students[1])
-#print(students[2])
+students = ["Hermoine", "Harry", "Ron"]
+
+print(students[0])
+print(students[1])
+print(students[2])
 
 ## other with for loop version
 
-#students = ["Hermoine", "Harry", "Ron"]
-#
-#for students in students:
-#    print(students)
+students = ["Hermoine", "Harry", "Ron"]
+
+for students in students:
+    print(students)
 
 ## version with function len (lenght)
 
-#students = ["Hermoine", "Harry", "Ron"]
-#
-#for i in range(len(students)):
-#    print(i + 1, students[i])
+students = ["Hermoine", "Harry", "Ron"]
+
+for i in range(len(students)):
+    print(i + 1, students[i])
 
 ## version using dict (dictionary)
 
-#students = ["Hermoine", "Harry", "Ron", "Draco"]
-#house = ["Gryffindor", "Gryffindor", "Gryffindor", "Slytherin"]
-#
-#students = {
-#    "Hermione": "Gryffindor",
-#    "Harry": "Gryffindor",
-#    "Ron": "Gryffindor",
-#    "Draco": "Slytherin",
-#}
-#
-#for student in students:
-#    print(student, students[student], sep=", ")
+students = ["Hermoine", "Harry", "Ron", "Draco"]
+house = ["Gryffindor", "Gryffindor", "Gryffindor", "Slytherin"]
+
+students = {
+    "Hermione": "Gryffindor",
+    "Harry": "Gryffindor",
+    "Ron": "Gryffindor",
+    "Draco": "Slytherin",
+}
+
+for student in students:
+    print(student, students[student], sep=", ")
 
 ## updated version with keyword "none"
 

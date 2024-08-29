@@ -1,40 +1,45 @@
-## First Version
-# def hello():
-#     print("hello,")
+## Initial Version
 
-# name = input("What's your name? ")
-# hello()
-# print(name)#
+def hello():
+    print("hello,")
+
+name = input("What's your name? ")
+hello()
+print(name)
 
 
 ## Second Version
-# def hello(to):
-#     print("hello,", to)
+
+def hello(to):
+    print("hello,", to)
     
-# name = input ("What's your name? ")
-# hello(name)
+name = input ("What's your name? ")
+hello(name)
 
 ## More Polite Version
-# def hello(to="world"):
-#     print("hello,", to)
+
+def hello(to="world"):
+    print("hello,", to)
     
-# hello()
-# name = input("What's your name? ")
-# hello(name)
+hello()
+name = input("What's your name? ")
+hello(name)
 
 ## Main method
-# def main():
-#     name = input("What's your name? ")
-#     hello(name)
+
+def main():
+    name = input("What's your name? ")
+    hello(name)
    
     
-# def hello(to="world"):
-#     print("hello,", to)
+def hello(to="world"):
+    print("hello,", to)
  
     
-# main()
+main()
 
-## Scope
+## Scope (wtf is scope)
+
 def main():
     name = input("What's your name? ")
     hello()

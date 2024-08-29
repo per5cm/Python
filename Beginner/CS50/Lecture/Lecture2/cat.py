@@ -1,37 +1,37 @@
-## initial version
+## Initial version
 
-#i = 3 
-#while i != 0:
-#    print("meow")
-#   i = i - 1
+i = 3 
+while i != 0:
+    print("meow")
+    i = i - 1
 
-## second version
+## Second version
 
-#i = 1
-#while i < 3:
-#    print("meow")
-#    i += 1 
+i = 1
+while i < 3:
+    print("meow")
+    i += 1 
 
-## third version "for" loop
+## Third version "for" loop
 
-#for i in range(3):  # range function, # using underscore _ when you dont need to name variable, and its signal that you dont care ybout its name.
-#    print("meow")
+for i in range(3):  # range function, # using underscore _ when you dont need to name variable, and its signal that you dont care ybout its name.
+    print("meow")
 
-##fourth version
+## Fourth version
 
-#print("meow\n" * 3, end="") 
+print("meow\n" * 3, end="") 
 
-##fifth version
+## Fifth version
 
-#while True:
-#    n = int(input("What's n? "))
-#    if n > 0:
-#        break
+while True:
+    n = int(input("What's n? "))
+    if n > 0:
+        break
 
-#for i in range (n):
-#    print("meow")
+for i in range (n):
+    print("meow")
 
-#sixsth version
+## Sixsth version
 
 def main():
     number = get_number()
