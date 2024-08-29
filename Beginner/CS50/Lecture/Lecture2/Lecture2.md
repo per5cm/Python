@@ -8,6 +8,9 @@ while i != 0:
     print("meow")
     i = i - 1
 ```
+
+Flowchart
+
 ```mermaid
 graph TD
     A[Start] --> B[i = 3]
@@ -28,6 +31,6 @@ Is like intergers and float's or Bool (boolean expression) Python also has list.
 
     lists are items which can be different data types. It can contain strings or intergers.
 ```python
-    mixed_list = [1, "apple", 3.14, True]
+mixed_list = [1, "apple", 3.14, True]
 ```
 
