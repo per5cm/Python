@@ -1,4 +1,4 @@
-# initial version building pyramid
+## Initial version building pyramid
 
 def main():
     height = int(input("Height: "))

@@ -14,12 +14,16 @@ while i != 0:
 
 ```mermaid
 graph TD
-    A[Start] --> B[i = 3]
-    B --> C{i != 0?}
-    C -- Yes --> D[Print "meow"]
-    D --> E[i = i - 1]
-    E --> C
-    C -- No --> F[End]
+    A[Start] --> B[Input x]
+    B --> C[Input y]
+    C --> D{Is x < y?}
+    D -->|Yes| E["x is less than y"]
+    D -->|No| F{Is x > y?}
+    F -->|Yes| G["x is greater than y"]
+    F -->|No| H["x is equal to y"]
+    E --> I[End]
+    G --> I
+    H --> I
 ```
 
 # Data type list

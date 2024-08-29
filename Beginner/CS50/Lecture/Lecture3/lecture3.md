@@ -36,7 +36,7 @@ else:
     print(f"x is {x}")
 ```
 
-# using a loop
+# Using a loop
 
 you can loop the question till user inputs correct input and breaks out of the loop
 
@@ -51,7 +51,7 @@ while True:
         
 print(f"x is {x}")
 ```
-# break
+# Break
 
  you can break out of from the loop or conditionals like 'if' or 'else'. return function is stronger than break function
 
@@ -73,9 +73,9 @@ def get_int():
 main()
 ```
 
-# pass
+# Pass
 
-if you want to pass on doing anything with it so you want to catch it.
+if you want to pass on doing anything with it so you want to catch it. Or it ignores code and passes it.
 
 ## wtf if indentation
 

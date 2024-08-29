@@ -1,32 +1,32 @@
 ## Exception
 
-#try:
-#    x = int(input("What's x?: "))
-#    print(f"x is {x}")
-#except ValueError:
-#    print("x is not an interger")
+try:
+    x = int(input("What's x?: "))
+    print(f"x is {x}")
+except ValueError:
+    print("x is not an interger")
 
 ## Next Version using 'else' conditional
 
-#try:
-#    x = int(input("What's x?: "))  
-#except ValueError:
-#    print("x is not an interger")
-#
-#else:
-#    print(f"x is {x}")
+try:
+    x = int(input("What's x?: "))  
+except ValueError:
+    print("x is not an interger")
+
+else:
+    print(f"x is {x}")
 
 ## Refine it little bit futher using a loop
 
-#while True:
-#    try:
-#        x = int(input("What's x?: "))  
-#    except ValueError:
-#        print("x is not an interger")
-#    else:
-#        break
+while True:
+    try:
+        x = int(input("What's x?: "))  
+    except ValueError:
+        print("x is not an interger")
+    else:
+        break
         
-#print(f"x is {x}")
+print(f"x is {x}")
 
 ## Refine it futhuremore
 

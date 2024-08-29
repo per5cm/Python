@@ -1,19 +1,19 @@
-## append Method of Lists initial Version
+## Append Method of Lists initial Version
 
-#results = ["Mario", "Luigi"]
+results = ["Mario", "Luigi"]
 
-#results.append("Princess")
-#results.append("Yoshi")
-#results.append("Koopa Troopa")
-#results.append("Toad")
+results.append("Princess")
+results.append("Yoshi")
+results.append("Koopa Troopa")
+results.append("Toad")
 
-#results.append(["Bowser", "Donkey Kong Jr."])
-#results.remove(["Bowser", "Donkey Kong Jr."])
-#results.extend(["Bowser", "Donkey Kong Jr."])
+results.append(["Bowser", "Donkey Kong Jr."])
+results.remove(["Bowser", "Donkey Kong Jr."])
+results.extend(["Bowser", "Donkey Kong Jr."])
 
-## and so on...
+# And so on...
 
-#print(results)
+print(results)
 
 ## Updated Version
 

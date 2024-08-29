@@ -1,23 +1,27 @@
-#guess = 10 
-#print (guess)
+## Initial Version
 
-#Function
-#def get_guess():
-#    guess = 10
-#    return guess 
+guess = 10 
+print (guess)
 
-#print(get_guess())
+# Function
+def get_guess():
+    guess = 10
+    return guess 
 
-#Function input
-#def get_guess():
-#    guess = input("Enter a guess: ")
-#    return guess
-#
-#def main ():
-#    guess = get_guess()
-#    print(guess)
-#
-#main()
+print(get_guess())
+
+# Function input
+def get_guess():
+    guess = input("Enter a guess: ")
+    return guess
+
+def main ():
+    guess = get_guess()
+    print(guess)
+
+main()
+
+## Second Version
 
 def get_guess():
     guess = int(input("Enter a guess: "))
