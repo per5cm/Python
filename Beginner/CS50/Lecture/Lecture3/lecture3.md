@@ -1,5 +1,7 @@
 # Exceptions (something awry)
 
+Exceptions used for the things you are not ready for.
+
 Syntax Error // Run time error, what could go wrong?
 
 writing a code with error handling in mind, unexpected errror to handle.

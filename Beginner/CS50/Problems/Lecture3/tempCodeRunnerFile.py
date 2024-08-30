@@ -1,1 +1,0 @@
-print(date.strftime("%Y-%m-%d"))
