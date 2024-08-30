@@ -1,7 +1,6 @@
 from datetime import datetime
 
 while True:
-
     date_input = input("Date: ")
 
     try:
@@ -11,8 +10,8 @@ while True:
         elif " " in date_input and "," not in date_input:
             date = datetime.strptime(date_input, "%B %d %Y")
             output = date.strftime("%B %d, %Y")
-
-        print(output)
+        
+        print(output.strftime("%Y-%m-%d"))
         break
 
     except ValueError:

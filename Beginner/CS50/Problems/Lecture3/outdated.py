@@ -1,22 +1,25 @@
 from datetime import datetime
 
+months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+]
+
 while True:
+
     date_input = input("Date: ").strip()
-    
+
     try:
         if "/" in date_input:
             date = datetime.strptime(date_input, "%m/%d/%Y")
-            output = date.strftime("%m-%d-%Y")
-        elif " " in date_input and "," not in date_input:
-            date = datetime.strptime(date_input, "%B %d %Y")
-            output = date.strftime("%B %d, %Y")
         else:
-            raise ValueError("Incorrect format")
+            if any(month in date_input for month in months):
+                date = datetime.strptime(date_input, "%B %d, %Y")
 
-        print(output)
+        print(date.strftime("%Y-%m-%d"))
         break
-    
+
     except ValueError:
-        print("Please try again.")
+        print("Try again: ")
 
 
