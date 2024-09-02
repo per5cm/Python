@@ -1,5 +1,7 @@
 # Libraries
 
+usefull for automation of your task.
+
 the idea to share code saved code from you or others. Re-useability of the code.
 
 Python comes with 'random' library: 'docs.python-org/3/library/random.html'
@@ -55,3 +57,17 @@ using third party packages. a module that's implemeted in a folder, not just a f
 # pip 
 
 package manager, allows you to install packages
+
+# APIs 
+
+Application programming interface
+
+# requests
+
+allows you to make web requests 'pypi.org/project/requests
+
+# JSON 
+
+JavaScript Object Notation, JSON is sued as tipical language agnostic format for exchanging data between computers.
+'docs.python.org/3/library/json.html'
+

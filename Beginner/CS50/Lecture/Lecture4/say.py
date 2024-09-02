@@ -3,5 +3,14 @@ import sys
 
 if len(sys.argv) == 2:
     cowsay.cow("Hello, " + sys.argv[1])
-else:
-    print("Usage: python greet.py [your_name]")
+
+## import sayings.py
+
+import sys
+
+from sayings import hello 
+
+if len(sys.argv) == 2:
+    hello(sys.argv[1])
+
+
