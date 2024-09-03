@@ -71,3 +71,27 @@ allows you to make web requests 'pypi.org/project/requests
 JavaScript Object Notation, JSON is sued as tipical language agnostic format for exchanging data between computers.
 'docs.python.org/3/library/json.html'
 
+# Style
+
+PEP 8 python enhancment proposal that tried to standardized how code should look rather tried. ' peps-python.org/pep-0008/'
+
+its a style guide to code 'Readability counts', its not a rule but rather a guidelines.
+
+    Indentation
+    Tabs or Spaces?
+    Maximum Line Lenght
+    Blank Lines
+    Imports
+    etc...
+
+# pylint
+
+one of most popular Python program called pylint it is generaly known as linter. 'pycodestyle.pycqa.org'
+
+# pycodestyle
+
+formaly know as pep8 'pycodestyle.pycqa.org'
+
+# black
+
+also a style program which gaining steam in Python comunity. its heavy opinionated format. 'black.readthedocs.io'
