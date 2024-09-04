@@ -9,17 +9,21 @@ def main():
     while True:
         try:
             guess = int(input(f"Guess a number between {lower_bound} and {upper_bound}: "))
-            if guess == secret_number:
-                print("Just right!", guess)
-                break
-            elif guess < secret_number:
+
+            if guess < secret_number:
                 print("Too small!", guess)
             elif guess > secret_number:
                 print("Too large!", guess)
-            else:
-                print()
+            elif guess == secret_number:
+                print("Just right!", guess)
+                break
 
         except ValueError:
             continue
         except EOFError:
             break
+
+if __name__ == "__main__":
+    main()
+    
+    
