@@ -12,7 +12,7 @@ def main():
         tries = 0
         while tries < 3:
             try:
-                user_answer = int(input(f" {x} + {y} = "))
+                user_answer = int(input(f"{x} + {y} = "))
                 if user_answer == correct_answer:
                     score += 1
                     break
@@ -23,7 +23,7 @@ def main():
             tries += 1
 
         if tries == 3:
-            print(f"Correct answer: {correct_answer}")
+            print(f"The correct answer is {correct_answer}")
 
     print(f"Score: {score}/10")
 
@@ -31,12 +31,12 @@ def main():
 def get_level():
     while True:
         try:
-            level = int(input("Level: "))
+            level = int(input("Level (1, 2, or 3): "))
             if level in [1, 2, 3]:
                 return level
         except ValueError:
             pass
-        print("Invalid level.")
+        print("Invalid level. Please enter 1, 2, or 3.")
 
 
 def generate_integer(level):
@@ -47,7 +47,7 @@ def generate_integer(level):
     elif level == 3:
         return random.randint(100, 999)
     else:
-        raise ValueError("Invalid level")
+        raise ValueError("Level must be 1, 2, or 3")
 
 
 if __name__ == "__main__":

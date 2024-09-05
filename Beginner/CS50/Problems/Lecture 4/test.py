@@ -1,25 +1,32 @@
 import random
 
-lower_bound = 1
-upper_bound = 100
+def askNum():
+  while(1):
+    try:
+      userInput = int(input("Enter a number: "))
+      break
+    except ValueError:
+      print("Incorrect Input!")
 
-secret_number = random.randint(lower_bound, upper_bound)
+  return userInput
 
-def main():
-    while True:
-        try:
-            guess = int(input(f"Guess a number between {lower_bound} and {upper_bound}: "))
-            if guess == secret_number:
-                print("Just right!", guess)
-                break
-            elif guess < secret_number:
-                print("Too small!", guess)
-            elif guess > secret_number:
-                print("Too large!", guess)
-            else:
-                print()
+def askQuestion():
 
-        except ValueError:
-            continue
-        except EOFError:
-            break
+  x = random.randint(1, 100)
+  y = random.randint(1, 100)
+
+  print("What is " + str(x) + " + " + str(y))
+
+  u = askNum()
+
+  if (u == x + y):
+    return 1
+  else:
+    return 0
+
+amount = 10
+correct = 0
+for i in range(amount):
+  correct += askQuestion()
+
+print("You got %d correct out of %d" % (correct, amount))
