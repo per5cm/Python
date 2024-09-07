@@ -1,32 +1,19 @@
-import random
+from pyfiglet import Figlet
+import sys
 
-def askNum():
-  while(1):
-    try:
-      userInput = int(input("Enter a number: "))
-      break
-    except ValueError:
-      print("Incorrect Input!")
+figlet = Figlet()
+try:
+    if len(sys.argv) == 1:
+        is_Font = True
+    elif len(sys.argv) == 3 and sys.argv[1] == '-f' or sys.argv[1] == '--font':
+        is_Font = False
+    if is_Font == False:
+        figlet.setFont(font=sys.argv[2])
+except:
+    print("Invalid usage")
+    sys.exit(1)
 
-  return userInput
+figlet.getFonts()
 
-def askQuestion():
-
-  x = random.randint(1, 100)
-  y = random.randint(1, 100)
-
-  print("What is " + str(x) + " + " + str(y))
-
-  u = askNum()
-
-  if (u == x + y):
-    return 1
-  else:
-    return 0
-
-amount = 10
-correct = 0
-for i in range(amount):
-  correct += askQuestion()
-
-print("You got %d correct out of %d" % (correct, amount))
+prompt = input("Input: ")
+print("Output:",'\n', figlet.renderText(prompt))
