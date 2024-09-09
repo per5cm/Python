@@ -1,19 +1,22 @@
-from pyfiglet import Figlet
 import sys
+import requests
 
-figlet = Figlet()
-try:
-    if len(sys.argv) == 1:
-        is_Font = True
-    elif len(sys.argv) == 3 and sys.argv[1] == '-f' or sys.argv[1] == '--font':
-        is_Font = False
-    if is_Font == False:
-        figlet.setFont(font=sys.argv[2])
-except:
-    print("Invalid usage")
+if len(sys.argv) == 2:
+    try: 
+        value = float(sys.argv[1])
+    except:
+        print("Command-line argument is not a number")
+        sys.exit(1)
+else:
+    print("Missing command-line argument")
     sys.exit(1)
 
-figlet.getFonts()
+try:
+    request = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+    response = request.json()
+    bitcoin = response["bpi"]["USD"]["rate_float"]
+    total_amount = bitcoin * value
+    print(f"${total_amount:,.4f}")
 
-prompt = input("Input: ")
-print("Output:",'\n', figlet.renderText(prompt))
+except requests.RequestException:
+    print("Request exception")
