@@ -21,7 +21,7 @@ def main():
         total_cost = bitcoin * price_usd
         print(f"${total_cost:,.4f}")
     except requests.RequestException:
-        sys.exit("Error")
+        sys.exit("Request exceptions")
 
 if __name__ == "__main__":
     main()
