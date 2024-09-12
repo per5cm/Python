@@ -2,8 +2,9 @@ from bank import value
 
 def main():
     test_value()
-
-
+    test_case_insensitiv()
+    test_entire_phrase()
+    
 def test_value():
     assert value("hello") == 0
     assert value("h") == 20
