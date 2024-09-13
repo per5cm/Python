@@ -13,13 +13,13 @@ if __name__ == "__main__":
 
 ## Using debugger
 
-#def main():
-#    height = int(input("Height: "))
-#    pyramid(height)
+def main():
+    height = int(input("Height: "))
+    pyramid(height)
 
-#def pyramid (n):
-#    for i in range(n):
-#        print("#" * i)
+def pyramid (n):
+    for i in range(n):
+        print("#" * i)
 
-#if __name__ == "__main__":
-#    main()
+if __name__ == "__main__":
+    main()
