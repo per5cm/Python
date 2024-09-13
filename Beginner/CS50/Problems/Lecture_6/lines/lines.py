@@ -1,11 +1,10 @@
 import sys
 
-def main():
-    ...
+check_list = []
 
-def check_command_line_arg():
-    ...
-
-
-if __name__ == "__main__":
-    main()
+if len(sys.argv) < 2:
+    sys.exit("Too few command-line arguments")
+elif len(sys.argv) > 2:
+    sys.exit("Too many command-line arguments")
+else:
+    print(len(check_list))
