@@ -10,7 +10,7 @@ else:
     try:
         with open(f"{sys.argv[1]}") as file:
             reader = csv.reader(file)
-            header = next(reader)  # Read the first row as headers
-            print(tabulate(reader, headers=header, tablefmt="grid"))  # Directly pass the reader object
+            #header = next(reader)  # Read the first row as headers
+            print(tabulate(reader, headers="firstrow", tablefmt="grid"))  # Directly pass the reader object
     except FileNotFoundError:
         sys.exit("File does not exist")
