@@ -1,20 +1,27 @@
-import sys
+from sys import exit, argv
+import csv
 
-lst = []
 
-if len(sys.argv) == 1:
-    sys.exit("Too few command-line arguments")
-elif len(sys.argv) > 2:
-    sys.exit("Too many command-line arguments")
-elif not sys.argv[1].endswith(".py"):
-    sys.exit("Not a Python file")
-else:
+def main():
+    if len(argv) > 3: exit('Too many command-line arguments')
+    elif len(argv) < 3: exit('Too few command-line arguments')
     try:
-        with open(f"{sys.argv[1]}") as file:
-            for line in file:
-                if not line.isspace() and not line.strip().startswith("#"):
-                    lst.append(line)
+        with open(argv[1], 'r') as file:
+            reader = csv.DictReader(file)
+            with open(argv[2], 'w') as file:
+                fieldnames= ['first','last','house']
+                writer = csv.DictWriter(file, fieldnames=fieldnames)
+                writer.writeheader()
+                for row in reader:
+                    last, first = row['name'].split(", ")
+                    row['name'] = {'first' : first, 'last' : last}
+                    writer.writerow({'first': row['name']['first'],'last':row['name']['last'], 'house' : row['house']})
+
     except FileNotFoundError:
-        sys.exit("File does not exist")
-    else:
-        print(len(lst))
+
+        exit('Could not read invalid_file.csv')
+
+
+if __name__ == "__main__":
+
+    main()
