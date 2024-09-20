@@ -33,3 +33,10 @@ specials symbols:
     A|B either A or B
     (...) a group
     (?:...) non-capturing version
+
+# := valrus operator 
+
+its new on python which allows you to assign a value and ask Boolean question.
+```python
+if matches := re.search(r"^(.+), ?(.+)$", name)
+```
