@@ -10,6 +10,7 @@ else:
     print("Invalid")
 
 ## Version with re.search(pattern, string, flags=0)
+## re.match(pattern, string, flags=0)
 
 import re
 

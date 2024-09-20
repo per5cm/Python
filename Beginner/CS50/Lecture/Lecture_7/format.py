@@ -1,4 +1,4 @@
-# Initial Version
+## Initial Version
 
 name = input("What's your name? ").strip()
 if "," in name:
@@ -6,7 +6,7 @@ if "," in name:
     name = f"{first} {last}"
 print(f"hello, {name}")
 
-# With expressions.
+## With expressions.
 
 import re
 

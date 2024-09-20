@@ -34,6 +34,10 @@ specials symbols:
     (...) a group
     (?:...) non-capturing version
 
+# re.search(pattern, string, flags=0)
+# re.match(pattern, string, flags=0)
+# re.sub(pattern, string, count=0, flags=0)
+
 # := valrus operator 
 
 its new on python which allows you to assign a value and ask Boolean question.
