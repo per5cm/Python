@@ -9,3 +9,5 @@ def main():
         print(f"Valid.Matched with {match.group()}")
     else:
         print("Invalid.")
+
+main()
