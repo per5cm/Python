@@ -1,4 +1,14 @@
-from validator_collection import validators, checkers, errors
+import re
+import sys
 
-email_address = validators.email('test@domain.dev')
-print(email_address)
+
+count = (input("Text: "))
+
+if re.search(r"\bum\b", count):
+    print("matched!")
+else:
+    print("not matched!")
+            
+
+
+
