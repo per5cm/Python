@@ -1,19 +1,4 @@
-import re
-import sys
+from validator_collection import validators, checkers, errors
 
-
-def main():
-    print(validate(input("IPv4 Address: ")))
-
-
-def validate(ip):
-    matches = re.search(r"^(\d+)\.(\d+)\.(\d+)\.(\d+)$", ip)
-    if matches:
-        for number in matches.groups():
-            if int(number) > 255:
-                return False
-            return True
-
-
-if __name__ == "__main__":
-    main()
+email_address = validators.email('test@domain.dev')
+print(email_address)
