@@ -31,3 +31,7 @@ Dunder init method.
 # raise
 
 keyword related to execptions
+
+# __str__
+
+this is also special method to define in class
