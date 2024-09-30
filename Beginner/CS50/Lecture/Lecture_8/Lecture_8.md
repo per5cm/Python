@@ -43,3 +43,28 @@ Propertie is just an attribute that has defense mechanisms put into place that c
 # decorators
 
 it is a function that modify the behavior of other function.
+
+# class methods
+
+@classmethod this another decorator 
+
+# inheritance
+
+to design your classes in hierarchical fashion.
+
+# exceptions
+
+    KeyboardInterrupt
+    Exception
+        AritmeticError
+            ZeroDivisionError
+        AssertionError
+        EOFError
+        ImportError
+            ModuleNotFoundError
+        LookupError
+            KeyError
+        NameError
+        SyntaxError
+            IndentationError
+        ValueError
