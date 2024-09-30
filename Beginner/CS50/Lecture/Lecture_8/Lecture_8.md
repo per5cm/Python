@@ -27,3 +27,7 @@ classes come with certain methods, or functions inside them, that you can define
 # __init__
 
 Dunder init method.
+
+# raise
+
+keyword related to execptions
