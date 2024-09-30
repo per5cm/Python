@@ -68,3 +68,7 @@ to design your classes in hierarchical fashion.
         SyntaxError
             IndentationError
         ValueError
+
+# operator overloading
+
+you can take common sybols, like plus or minus or other such syntax on the keyboard, and you can implement your own interpretation thereof.
