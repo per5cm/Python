@@ -72,3 +72,5 @@ to design your classes in hierarchical fashion.
 # operator overloading
 
 you can take common sybols, like plus or minus or other such syntax on the keyboard, and you can implement your own interpretation thereof.
+
+'docs.python/3/referance/datamodel.html#special-method-names'
