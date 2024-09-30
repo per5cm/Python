@@ -12,7 +12,7 @@ def get_house():
     return input("House: ")
 
 
-if __name__ == "__main___":
+if __name__ == "__main__":
     main()
     
 ## Next solution.
@@ -27,7 +27,7 @@ def get_student():
     return name, house
 
 
-if __name__ == "__main___":
+if __name__ == "__main__":
     main()
 
 
@@ -45,5 +45,24 @@ def get_student():
     return [name, house]
 
 
-if __name__ == "__main___":
+if __name__ == "__main__":
+    main()
+
+
+## Using dictionary
+
+def main():
+    student = get_student()
+    if student[0] == "Padma":
+        student[1] = "Ravenclaw"
+    print(f"{student['name']} from {student['house']}")
+
+def get_student():
+    student = {}
+    student["name"] = input("Name: ")
+    student["house"] = input("House: ")
+    return student
+
+
+if __name__ == "__main__":
     main()
