@@ -35,3 +35,11 @@ keyword related to execptions
 # __str__
 
 this is also special method to define in class
+
+# properties
+
+Propertie is just an attribute that has defense mechanisms put into place that can prevent that you mess up an attribute.
+
+# decorators
+
+it is a function that modify the behavior of other function.
