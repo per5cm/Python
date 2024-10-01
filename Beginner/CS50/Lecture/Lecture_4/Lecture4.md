@@ -1,97 +1,38 @@
-# Libraries
+# Random Library:
+    random.choice(seq): Selects a random element from a sequence.
+    random.randint(a, b): Returns a random integer between a and b inclusive.
+    random.shuffle(x): Shuffles elements in a list, similar to shuffling a deck of cards.
 
-usefull for automation of your task.
+# Specific Imports:
+    from keyword: Allows importing specific functions from a module, making the code cleaner by importing only what's needed.
 
-the idea to share code saved code from you or others. Re-useability of the code.
+# Statistics Library:
+    Useful for analyzing data: check out the official documentation at docs.python.org/3/library/statistics.html.
 
-Python comes with 'random' library: 'docs.python-org/3/library/random.html'
+# Command-Line Arguments:
+    sys.argv: This allows passing arguments to a Python program from the command line, useful for automation scripts.
 
-# Import - keyword
+# System Functionality:
+    sys.exit(): Exits the program immediately.
 
-random.choice(seq)
+# Slices:
+    Slicing allows you to get a subset of a list, making it easy to manipulate data.
 
-# From - keyword
+# Packages:
+    Third-party packages extend Python’s functionality. These packages can be installed using pip, Python's package manager.
+    PyPi (Python Package Index): A repository for Python packages (pypi.org).
 
-from is a keyword in Python when you import functions it allows you to be more specific than import alone.
+# Cowsay:
+    Fun package to generate ASCII art of cows saying something (pypi.org/projects/cowsay).
 
-# random.randint(a, b)
+# APIs:
+    requests library: Allows you to make web requests, which is great for interacting with APIs.
 
-it implies get back a random int, it's a random int between A an B inclusive: so if you were to pass in 1 for A and 10 for B.
+# JSON:
+    A popular format for exchanging data. The json library is included in Python and can be used to parse and generate JSON data.
 
-# random.shuffle(x)
+# Code Style:
+    PEP 8: A style guide for Python code, encouraging readability and consistency (peps.python.org/pep-0008).
+    Linters: Tools like pylint, pycodestyle, and black help ensure code adheres to style guidelines.
 
-its like randomize them like a deck of cards so to speak.
-
-# statistics 
-
-for data analyzing: 'docs.python.org/3/livrary/statistics.html
-
-# command-line argument
-
-generally tha allow you to provide input not when propted inside of a program as happens whenever we call Python function.
-
-# sys // sys.argv (argument vectors)
-
-is a short word for system, contains a whole lot of functionality that's specific to the system itself and the commands that you typing: 'docs.python.org/3/library/sys.html'
-
-# sys.exit 
-
-as the name suggest its gonna do exactly that. 
-
-# slices
-
-like the name suggest. to take a slice of a list means to take a subset of it
-
-# packages
-
-using third party packages. a module that's implemeted in a folder, not just a file but folder.
-
-# PyPi
-
-'pypi.org'
-
-# cowsay
-
-'pypi.org/projects/cowsay'
-
-# pip 
-
-package manager, allows you to install packages
-
-# APIs 
-
-Application programming interface
-
-# requests
-
-allows you to make web requests 'pypi.org/project/requests
-
-# JSON 
-
-JavaScript Object Notation, JSON is sued as tipical language agnostic format for exchanging data between computers.
-'docs.python.org/3/library/json.html'
-
-# Style
-
-PEP 8 python enhancment proposal that tried to standardized how code should look rather tried. ' peps-python.org/pep-0008/'
-
-its a style guide to code 'Readability counts', its not a rule but rather a guidelines.
-
-    Indentation
-    Tabs or Spaces?
-    Maximum Line Lenght
-    Blank Lines
-    Imports
-    etc...
-
-# pylint
-
-one of most popular Python program called pylint it is generaly known as linter. 'pycodestyle.pycqa.org'
-
-# pycodestyle
-
-formaly know as pep8 'pycodestyle.pycqa.org'
-
-# black
-
-also a style program which gaining steam in Python comunity. its heavy opinionated format. 'black.readthedocs.io'
+You can leverage these libraries and tools to automate tasks, reuse code efficiently, and ensure that your Python code is readable and well-structured.
