@@ -8,18 +8,18 @@
     assert is a statement used to check whether a condition is true.
     If the condition evaluates to True, nothing happens. If it evaluates to False, the program raises an AssertionError.
 
-    ```python
-    assert x == 5  # Nothing happens if x is 5, but if not, AssertionError is raised.
-    ```
+```python
+assert x == 5  # Nothing happens if x is 5, but if not, AssertionError is raised.
+```
 
 # AssertionError:
 
     AssertionError occurs when an assertion fails. It's Python's way of telling you that the assumption (condition) in the assert statement is not true.
 
-    ```python
-    x = 3
-    assert x == 5  # Raises AssertionError because x is not equal to 5.
-    ```
+```python
+x = 3
+assert x == 5  # Raises AssertionError because x is not equal to 5.
+```
 
     Assertion errors are a helpful debugging tool when testing code because they help you catch mistakes early.
 
@@ -38,9 +38,9 @@
 
     Floating-point numbers are tricky due to precision limitations in binary representation. To avoid assertion errors when comparing floats, you can use pytest.approx to compare floating point numbers with tolerance.
 
-    ```python
-    assert 0.1 + 0.2 == pytest.approx(0.3)
-    ```
+```python
+assert 0.1 + 0.2 == pytest.approx(0.3)
+```
 
 # Packages and __init__.py:
 
@@ -49,14 +49,14 @@
 
 Example of Simple Unit Test with pytest:
 
-    ```python
-    def add(a, b):
-        return a + b
+```python
+def add(a, b):
+    return a + b
 
-    def test_add():
-        assert add(2, 3) == 5
-        assert add(-1, 1) == 0
-    ```
+def test_add():
+    assert add(2, 3) == 5
+    assert add(-1, 1) == 0
+```
     To run this test with pytest, save the code to a file (e.g., test_example.py), and run:
 
     bash
