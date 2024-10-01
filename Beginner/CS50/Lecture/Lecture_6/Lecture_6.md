@@ -1,14 +1,14 @@
 # File I/O:
 
-    File I/O (Input/Output) allows your program to interact with files, reading from or writing to them. Unlike storing information in memory, files allow data persistence, meaning the data remains after the program exits.
+File I/O (Input/Output) allows your program to interact with files, reading from or writing to them. Unlike storing information in memory, files allow data persistence, meaning the data remains after the program exits.
 
 # Lists:
 
-    Lists are a way to store multiple items in a single variable, which can later be accessed, iterated over, and manipulated.
+Lists are a way to store multiple items in a single variable, which can later be accessed, iterated over, and manipulated.
 
 # open():
 
-    open() is used to open files so that your program can read from or write to them. It returns a file handle, which acts as a reference to that file for subsequent operations.
+open() is used to open files so that your program can read from or write to them. It returns a file handle, which acts as a reference to that file for subsequent operations.
     Syntax:
 
 ```python
@@ -19,15 +19,15 @@ Once the file is opened, you can perform operations like reading or writing:
 
 ```python
     content = file_handle.read()  # Reads the entire file.
-
+```
     Remember to close the file using file_handle.close() or use with (see below).
 
-Documentation: Python open() function.
-```
+'docs.python.org/3/library/fuctions.html#open'
+
 
 # with:
 
-    with is a context manager that allows you to work with files in a clean and safe way, automatically closing the file when you're done.
+with is a context manager that allows you to work with files in a clean and safe way, automatically closing the file when you're done.
 
 ```python
     with open('filename.txt', 'r') as file_handle:
@@ -37,7 +37,7 @@ Documentation: Python open() function.
 
 # sorted():
 
-    sorted() is a built-in function that sorts iterable objects (like lists, tuples, etc.). It does not modify the original list but returns a new sorted list.
+sorted() is a built-in function that sorts iterable objects (like lists, tuples, etc.). It does not modify the original list but returns a new sorted list.
 
 ```python
 sorted_list = sorted([3, 1, 2])  # Returns [1, 2, 3]
@@ -46,15 +46,15 @@ sorted_list = sorted([3, 1, 2])  # Returns [1, 2, 3]
 You can customize the sort using the key argument or sort in reverse order using reverse=True.
 
 ```python
-    sorted_list = sorted([3, 1, 2], reverse=True)  # Returns [3, 2, 1]
-
-Documentation: Python sorted() function.
+    sorted_list = sorted([3, 1, 2], key=None, reverse=True)  # Returns [3, 2, 1]
 ```
+'docs.python.org/3library/functions.html#sorted'
+
 
 # CSV (Comma-Separated Values):
 
-    CSV is a simple format to store tabular data. Each row is typically a record, and each column is separated by a comma.
-    You can read and write CSV files using Python’s built-in csv module:
+CSV is a simple format to store tabular data. Each row is typically a record, and each column is separated by a comma.
+You can read and write CSV files using Python’s built-in csv module:
 
 ```python
 
@@ -71,9 +71,9 @@ Documentation: Python sorted() function.
         writer = csv.writer(file)
         writer.writerow(['name', 'age'])
         writer.writerow(['Alice', 30])
-
-Documentation: Python csv module.
 ```
+'docs.python.org/3library/csv.html'
+
 
 # Lambda Functions:
 
@@ -107,8 +107,7 @@ Example of opening an image and applying a filter:
     img = Image.open('image.jpg')
     img_filtered = img.filter(ImageFilter.BLUR)
     img_filtered.show()  # Opens the image with the filter applied
-
-Documentation: Pillow documentation.
 ```
+'pillow.readthedocs.io'
 
 By using these concepts, you can manage file data, sort information, write clean anonymous functions, and work with images effectively in your programs.
