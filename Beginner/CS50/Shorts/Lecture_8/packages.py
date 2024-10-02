@@ -1,3 +1,5 @@
+# Instance Variable
+
 class Package:
     def __init__(self, number, sender, recipient, weight):
         self.number = number
