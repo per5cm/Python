@@ -1,9 +1,9 @@
 class Jar:
-    def __init__(self, capacity=12):
+    def __init__(self, capacity=12, cookies=0):
         if not isinstance(capacity, int) or capacity < 0:
             raise ValueError("Hit the road Jack, Wrong capacity!")
         self._capacity = capacity
-        self._cookies = 0
+        self._cookies = cookies
 
     def __str__(self):
         return "🍪" * self._cookies
