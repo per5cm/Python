@@ -2,7 +2,6 @@
 
 docs.python.org/3/howto/
 
-
 this lecture focuses on what you can do with python beyond basics concepts learn in cs50 course.
 
 # Set
