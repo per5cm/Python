@@ -5,4 +5,6 @@ weight = 84
      
 bmi = weight / height ** 2
      
-print(bmi)
+print(round(bmi))
+
+print(round(bmi, 2)) # after comma ,2 will print two decimals usefull when wroking with money numbers
