@@ -6,12 +6,12 @@ print(player_health - 100)
 
 # and here
 
-print(player_health - 100)
+print(player_health - 200)
 
 # and here
 
-print(player_health - 100)
+print(player_health - 300)
 
 # and here
 
-print(player_health - 100)
+print(player_health - 400)
