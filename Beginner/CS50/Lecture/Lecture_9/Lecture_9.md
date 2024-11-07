@@ -9,3 +9,7 @@ this lecture focuses on what you can do with python beyond basics concepts learn
 set is a data type, its not a list but eliminates duplicates.
 
 docs.python.org/3/library/stdtypes.html#set
+
+# global
+
+wtf is global variable.
