@@ -41,7 +41,7 @@ if __name__ == "__main__":
     main() 
 
 
-# OPP 
+# object oriented programming
 
 class Account:
     def __init__(self):
@@ -51,7 +51,7 @@ class Account:
     def balance(self):
         return self._balance
     
-    def deposti(self, n):
+    def deposit(self, n):
         self._balance += n
 
     def withdraw(self, n):
