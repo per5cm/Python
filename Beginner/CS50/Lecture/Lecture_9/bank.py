@@ -47,7 +47,7 @@ class Account:
     def __init__(self):
         self._balance = 0
 
-    @property
+    @property # instance veriable it controls how its red and writen.
     def balance(self):
         return self._balance
     

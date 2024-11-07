@@ -14,3 +14,7 @@ docs.python.org/3/library/stdtypes.html#set
 
 wtf is global variable.
 global variable is on top of the file and not defined or in main.
+
+# constants
+
+That is, once you have set a value to them, you cannot change the value of that variable. it allows you to program defensivly?
