@@ -18,3 +18,4 @@ global variable is on top of the file and not defined or in main.
 # constants
 
 That is, once you have set a value to them, you cannot change the value of that variable. it allows you to program defensivly?
+You can capitalize in Python your variables when you want to indicate to the world that you should not touch this it is constant.
