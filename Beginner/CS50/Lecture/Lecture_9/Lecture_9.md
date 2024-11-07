@@ -13,3 +13,4 @@ docs.python.org/3/library/stdtypes.html#set
 # global
 
 wtf is global variable.
+global variable is on top of the file and not defined or in main.
