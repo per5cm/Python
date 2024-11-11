@@ -5,12 +5,13 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    if request == "POST":
-        city = request.form["cityName"]
-        state = request.form["stateName"]
-        country = request.form["countryName"]
-        get_weather(city, state, country)
-    return render_template("index.html")
+    data = None
+    if request.method == "POST":  
+        city = request.form.get("cityName")
+        state = request.form.get("stateName")
+        country = request.form.get("countryName")
+        data = get_weather(city, state, country)
+    return render_template("index.html", data=data)
 
 if __name__ == "__main__":
     app.run(debug=True)
