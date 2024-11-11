@@ -1,4 +1,4 @@
-# My Weather App
+# Weather App
 #### Video Demo:  <URL HERE>
 #### Description:
 
