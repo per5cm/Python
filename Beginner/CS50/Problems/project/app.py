@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 from project import main as get_weather
 
@@ -5,6 +6,11 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+
+    print("Current Working Directory:", os.getcwd())
+    print("Index template exists:", os.path.exists(os.path.join("templates", "index.html")))
+
+
     data = None
     if request.method == "POST":  
         city = request.form.get("cityName")

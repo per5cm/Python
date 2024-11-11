@@ -3,15 +3,19 @@ from dotenv import load_dotenv
 import os
 from dataclasses import dataclass
 
-load_dotenv()
-api_key = os.getenv("API_KEY")
-
 @dataclass
 class WeatherData:
     main: str
     description: str
     icon: str
-    temperature: float
+    temperature: int
+
+def load_api_key():
+    load_dotenv()
+    api_key = os.getenv("API_KEY")
+    if not api_key:
+        raise ValueError("API_KEY not found.")
+    return api_key
 
 
 def get_lan_lon(city_name, state_code, country_code, API_key):
@@ -27,16 +31,16 @@ def get_current_weather(lat, lon, API_key):
         main=response.get("weather")[0].get("main"),
         description=response.get("weather")[0].get("description"),
         icon=response.get("weather")[0].get("icon"),
-        temperature=response.get("main").get("temp"),
+        temperature=int(response.get("main").get("temp")),
     )
 
     return data
 
 def main(city_name, state_name, country_name):
-    lat, lon = get_lan_lon("Toronto", "ON", "Canada", api_key)
+    api_key = load_api_key()
+    lat, lon = get_lan_lon(city_name, state_name, country_name, api_key)
     weather_data = get_current_weather(lat, lon, api_key)
     return weather_data
 
 if __name__ == "__main__":
-    lat, lon = get_lan_lon("Toronto", "ON", "Canada", api_key)
-    print(get_current_weather(lat, lon, api_key))
+    main()

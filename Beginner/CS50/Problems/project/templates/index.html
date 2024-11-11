@@ -16,10 +16,10 @@
             <button type="submit" class="btn btn-primary">Find</button>
         </form>
 
-        {% if data %}
-        <div class="mt-4">
-            <p>{{ data }}</p>
-        </div>
+        {% if data %}       
+        {{ data.main }}: {{ data.description}}<br>
+        <img src="https://openweathermap.org/img/wn/{{data.icon}}@2x.png" alt="Icon">
+        {{data.temperature}} C   
         {% endif %}
     </div>
 
