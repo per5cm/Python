@@ -27,7 +27,7 @@ elif 60 <= score < 70:
 else:
     print("Grade: F")
 
-##more shorter version
+## more shorter version
 
 score= int(input("Score: "))
 
