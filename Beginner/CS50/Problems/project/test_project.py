@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch
-from project import load_api_key, get_lan_lon, get_current_weather, WeatherData
+from project import load_api_key, get_lan_lon, get_current_weather
 
 # Mock API Key
 @pytest.fixture
