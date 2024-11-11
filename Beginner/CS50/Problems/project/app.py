@@ -9,6 +9,7 @@ def index():
         city = request.form["cityName"]
         state = request.form["stateName"]
         country = request.form["countryName"]
+        get_weather(city, state, country)
     return render_template("index.html")
 
 if __name__ == "__main__":
