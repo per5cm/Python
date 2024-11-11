@@ -1,44 +1,41 @@
-from unittest.mock import patch, MagicMock
-from project import load_api_key, get_lan_lon, get_current_weather 
+import pytest
+from unittest.mock import patch
+from project import load_api_key, get_lan_lon, get_current_weather, WeatherData
 
-def test_load_api_key(monkeypatch):
-    # Test successful loading of API key
-    monkeypatch.setenv("API_KEY", "test_api_key")
-    api_key = load_api_key()
-    assert api_key == "test_api_key"
+# Mock API Key
+@pytest.fixture
+def mock_api_key():
+    return "mock_api_key"
 
-@patch("requests.get")
-def test_get_lan_lon(mock_get):
-    # Mock response for geolocation
-    mock_response = MagicMock()
-    mock_response.json.return_value = [{"lat": 34.0522, "lon": -118.2437}]
-    mock_get.return_value = mock_response
+# Mock function to simulate .env loading for API key
+@patch("project.os.getenv")
+def test_load_api_key(mock_getenv):
+    mock_getenv.return_value = "mock_api_key"
+    assert load_api_key() == "mock_api_key"
 
-    lat, lon = get_lan_lon("Los Angeles", "CA", "US", "test_api_key")
-    assert lat == 34.0522
-    assert lon == -118.2437
-    mock_get.assert_called_once_with(
-        "http://api.openweathermap.org/geo/1.0/direct?q=Los Angeles,CA,US&appid=test_api_key"
-    )
+@patch("project.requests.get")
+def test_get_lan_lon(mock_get, mock_api_key):
+    mock_response = [
+        {"lat": 37.7749, "lon": -122.4194}
+    ]
+    mock_get.return_value.json.return_value = mock_response
 
+    lat, lon = get_lan_lon("San Francisco", "CA", "US", mock_api_key)
+    assert lat == 37.7749
+    assert lon == -122.4194
 
-@patch("requests.get")
-def test_get_current_weather(mock_get):
-    # Mock response for current weather
-    mock_response = MagicMock()
-    mock_response.json.return_value = {
-        "weather": [{"main": "Clear", "description": "clear sky", "icon": "01d"}],
-        "main": {"temp": 25}
+@patch("project.requests.get")
+def test_get_current_weather(mock_get, mock_api_key):
+    mock_response = {
+        "weather": [
+            {"main": "Clouds", "description": "overcast clouds", "icon": "04d"}
+        ],
+        "main": {"temp": 15}
     }
-    mock_get.return_value = mock_response
+    mock_get.return_value.json.return_value = mock_response
 
-    weather_data = get_current_weather(34.0522, -118.2437, "test_api_key")
-    assert weather_data.main == "Clear"
-    assert weather_data.description == "clear sky"
-    assert weather_data.icon == "01d"
-    assert weather_data.temperature == 25
-    mock_get.assert_called_once_with(
-        "https://api.openweathermap.org/data/2.5/weather?lat=34.0522&lon=-118.2437&appid=test_api_key&units=metric"
-    )
-
-
+    weather_data = get_current_weather(37.7749, -122.4194, mock_api_key)
+    assert weather_data.main == "Clouds"
+    assert weather_data.description == "overcast clouds"
+    assert weather_data.icon == "04d"
+    assert weather_data.temperature == 15

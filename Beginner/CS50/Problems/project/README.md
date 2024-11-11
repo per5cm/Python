@@ -19,6 +19,8 @@ Getting started preseted its own chalanges, learning Flask invovled learning tem
 
 On front end, I decided to use Bootstrap, its popular CSS framework and fairly simple to use and design clean simple, clean and responsive. Wanted the app easy to use on PC-dekstop and mobile device.
 
+Implementing pytest was a chalange in course we tested fairly simple code snipets but to test full project is an other story. I still need more learning on pytest.
+
 The final step will be to deploy the app so its accessible online. I am considering using Ionos cloud hosting for this project tho i am still thinking because since there are costs involved. But online hosting would be new learning curve.
 
 Overall this project for me was great introduction in web development, has thought me how to work with range of tools learned how Flask and APIs works basics of front end development. I am looking foward on my new projects in the future.
