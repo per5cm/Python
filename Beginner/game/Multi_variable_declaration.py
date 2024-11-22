@@ -1,1 +1,0 @@
-sword_name, sword_damage, sword_length = "Excalibur", 10, 200
